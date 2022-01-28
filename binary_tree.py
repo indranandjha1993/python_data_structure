@@ -62,12 +62,12 @@ class Node:
 
     # Postorder traversal
     # Left ->Right -> Root
-    def PostorderTraversal(self, root):
+    def PostorderTraversal(self, root_element):
         res = []
-        if root:
-            res = self.PostorderTraversal(root.left)
-            res = res + self.PostorderTraversal(root.right)
-            res.append(root.data)
+        if root_element:
+            res = self.PostorderTraversal(root_element.left)
+            res = res + self.PostorderTraversal(root_element.right)
+            res.append(root_element.data)
         return res
 
 
