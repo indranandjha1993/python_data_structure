@@ -34,4 +34,4 @@ e2.next_element = e3
 """
  print linked-list
 """
-list1.print_linked_list
+list1.print_linked_list()
